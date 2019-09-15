@@ -1,6 +1,6 @@
 var friends = [{
-        name: "Fiona",
-        instagram: "https://www.stickpng.com/assets/images/580b585b2edbce24c47b29f6.png",
+        name: "Fiona (me)",
+        instagram: "https://pbs.twimg.com/media/EDVs4LxVAAA0waF.jpg",
         scores: ["5", "2", "1", "5", "3", "1", "1", "5", "4", "1"]
     },
     {
@@ -9,8 +9,8 @@ var friends = [{
         scores: ["3", "3", "3", "3", "3", "3", "2", "3", "3", "3"]
     },
     {
-        name: "Kylo Ren",
-        instagram: "https://images.pexels.com/photos/34617/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        name: "Emet-Selch",
+        instagram: "https://pbs.twimg.com/media/EELZ11mUUAAFeTA.jpg",
         scores: ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
     }
 ];

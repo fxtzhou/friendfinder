@@ -13,8 +13,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
 
     <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
 
@@ -30,15 +29,35 @@
     .survey {
         margin-bottom: 30px;
     }
+
+    #modal1 {
+        text-align: center;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
 </style>
 
 <body>
 
 
-    <div class="alert alert-info" role="alert">
-        Take our super short quiz to match with people just like you! (5 is strongly agree, and 1
-        is strongly disagree)
+    <div class="alert alert-info sticky-top" role="alert">
+        <a href="/" class="alert-link"> <i class="fa fa-home fa-2x" aria-hidden="true" id="logo-icon"></i></a>
+        <div class="d-flex justify-content-end float-right">
+            Take our super short quiz to match with people just like you! <strong>(5 is strongly agree, and 1
+                is strongly disagree)</strong>
+        </div>
     </div>
+
 
     <main>
 
@@ -49,48 +68,46 @@
                     <h1>Survey Questions</h1>
                     <hr class="my-4">
 
-                    <form>
 
-                        <div class="row">
-                            <div class="col col-1 ">
-                                <i class="fa fa-user fa-2x" aria-hidden="true" id="logo-icon"></i>
 
-                            </div>
+                    <div class="row">
+                        <div class="col col-1 ">
+                            <i class="fa fa-user fa-2x" aria-hidden="true" id="logo-icon"></i>
 
-                            <div class="col col-4">
-                                <input type="text" class="form-control" id="userName" placeholder="First name">
-                            </div>
-                            <div class="col col-1"></div>
-                            <div class="col col-1 ">
-                                <i class="fa fa-instagram fa-2x" aria-hidden="true" id="logo-icon"></i>
-                            </div>
+                        </div>
 
-                            <div class="col col-4">
-                                <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">@</div>
-                                    </div>
-                                    <input type="text" class="form-control" id="inlineFormInputGroup"
-                                        placeholder="Instagram Username">
+                        <div class="col col-4">
+                            <input type="text" class="form-control" id="userName" placeholder="First name">
+                        </div>
+                        <div class="col col-1"></div>
+                        <div class="col col-1 ">
+                            <i class="fa fa-instagram fa-2x" aria-hidden="true" id="logo-icon"></i>
+                        </div>
+
+                        <div class="col col-4">
+                            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+
                                 </div>
-                                <div class="form-text text-muted">This isn't required, but it'll help friends find you!
-                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup"
+                                    placeholder="Instagram Username">
+                            </div>
+                            <div class="form-text text-muted">This isn't required, but it'll help friends find
+                                you!
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
 
-            </form>
-
-            <!-- Survey Questions -->
             <div class="survey">
                 <div class="input-field">
 
                     <h5>
                         <span>1.</span> How much do you value alone time?
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id=" q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -100,12 +117,14 @@
                     </select>
                 </div>
 
+
+
                 <div class="input-field">
 
                     <h5>
                         <span>2.</span> How much do you enjoy being in a group setting?
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -120,7 +139,7 @@
                     <h5>
                         <span>3.</span>You like being around people most of the time.
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -135,7 +154,7 @@
                     <h5>
                         <span>4.</span> You often find yourself offering help to others.
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -150,7 +169,7 @@
                     <h5>
                         <span>5.</span> You find yourself running away from drama or problems with other friends.
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -165,7 +184,7 @@
                     <h5>
                         <span>6.</span> You tend to be the center of a group.
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -180,7 +199,7 @@
                     <h5>
                         <span>7.</span> Josh is a better teacher than Treighton.
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">True</option>
                         <option value="2">False</option>
@@ -193,7 +212,7 @@
                     <h5>
                         <span>8.</span> You have a good idea where you're headed in life.
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -208,7 +227,7 @@
                     <h5>
                         <span>9.</span> You find that it's easy to achieve your goals.
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -223,58 +242,62 @@
                     <h5>
                         <span>10.</span> You're not allergic to cats.
                     </h5>
-                    <select id="q1">
+                    <select class="browser-default" id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">True</option>
                         <option value="2">False</option>
 
                     </select>
                 </div>
+
+
+
+                <!-- Survey Submit Button -->
+
+                <button class="btn btn-primary" type="submit" name="action" id="submitButton">
+                    Submit Responses
+
+                </button>
+
             </div>
 
-
-            <!-- Survey Submit Button -->
-
-            <button class="btn btn-primary" type="submit" name="action" id="submitButton">
-                Submit Responses
-
-            </button>
-
-        </div>
-        </div>
-        </div>
-        </div>
     </main>
-    <footer>
-        <nav class="nav justify-content-end sticky-top">
-            <a href="https://www.github.com/fxtzhou/friendfinder"><i class="fa fa-github fa-2x" aria-hidden="true"
-                    id="logo-icon"></i></a>
-        </nav>
-    </footer>
+    <nav class="nav" id="footer">
+
+        <a style="margin-left: 20px;" href="https://www.github.com/fxtzhou/friendfinder"><i class="fa fa-github fa-2x"
+                aria-hidden="true" id="logo-icon"></i></a>
+        <a class="grey-text text-lighten-3" style="margin-left: 20px;" href="/api/friends"> API Friends List</a>
+    </nav>
+
+
+
 
     <!-- Start of Modal -->
-    <div id="modal1" class="modal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title">Your New Best Friend</h1>
-                </div>
-                <div class="modal-body">
-                    <h2 id="bestFriend"></h2>
-                    <img id="bestFriendPhoto" src="#">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+    <!-- Modal Dialog Displaying Closest Friend Match -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Looks like you'd be good friends with...</h4>
+            <div class="divider"></div>
+            <h1 id="userMatch"></h1>
+            <img id="userMatchImage" class="materialboxed" height="400" src="" />
+        </div>
+        <div class="modal-footer">
+            <a href="/survey" class="modal-action modal-close ">Retake Quiz</a>
         </div>
     </div>
-
-    <!-- end modal -->
 </body>
-
 <script type="text/javascript">
+    // $(document).ready(function () {
+    //     $("select").material_select();
+    //     $(".modal").modal({
+    //         dismissible: false, // Modal can be dismissed by clicking outside of the modal
+    //         opacity: 0.5, // Opacity of modal background
+    //         inDuration: 300, // Transition in duration
+    //         outDuration: 200, // Transition out duration
+    //         startingTop: "4%", // Starting top style attribute
+    //         endingTop: "10%" // Ending top style attribute
+    //     });
+    // });
     $("#submitButton").on("click", function (event) {
         event.preventDefault();
 
@@ -309,8 +332,8 @@
         };
         $.post("/api/friends", userInput).done(function (data) {
             $("#userMatch").text(data.name);
-            $("#userMatchImage").attr("src", data.photo);
-            $("#modal1").modal("toggle");
+            $("#userMatchImage").attr("src", data.instagram);
+            $("#modal1").modal("open");
         })
     })
 </script>

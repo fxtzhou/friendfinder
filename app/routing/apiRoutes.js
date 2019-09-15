@@ -27,7 +27,7 @@ module.exports = function (app) {
             }
             if (totalDifference < bestMatch.difference) {
                 bestMatch.name = friends[i].name;
-                bestMatch.photo = friends[i].photo;
+                bestMatch.instagram = friends[i].instagram;
                 bestMatch.difference = totalDifference;
             }
             console.log(totalDifference);
