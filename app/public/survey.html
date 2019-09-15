@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder - Survey</title>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link href="https://fonts.googleapis.com/css?family=News+Cycle:700|Open+Sans&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
+
 
     <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+
+    <!--  -->
+
+
 
 </head>
 
@@ -287,17 +295,17 @@
     </div>
 </body>
 <script type="text/javascript">
-    // $(document).ready(function () {
-    //     $("select").material_select();
-    //     $(".modal").modal({
-    //         dismissible: false, // Modal can be dismissed by clicking outside of the modal
-    //         opacity: 0.5, // Opacity of modal background
-    //         inDuration: 300, // Transition in duration
-    //         outDuration: 200, // Transition out duration
-    //         startingTop: "4%", // Starting top style attribute
-    //         endingTop: "10%" // Ending top style attribute
-    //     });
-    // });
+    $(document).ready(function () {
+
+        $(".modal").modal({
+            dismissible: false, // Modal can be dismissed by clicking outside of the modal
+            opacity: 0.5, // Opacity of modal background
+            inDuration: 300, // Transition in duration
+            outDuration: 200, // Transition out duration
+            startingTop: "4%", // Starting top style attribute
+            endingTop: "10%" // Ending top style attribute
+        });
+    });
     $("#submitButton").on("click", function (event) {
         event.preventDefault();
 
@@ -333,7 +341,7 @@
         $.post("/api/friends", userInput).done(function (data) {
             $("#userMatch").text(data.name);
             $("#userMatchImage").attr("src", data.instagram);
-            $("#modal1").modal("open");
+            $("#modal1").modal;
         })
     })
 </script>
